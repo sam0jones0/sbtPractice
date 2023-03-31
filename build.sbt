@@ -4,5 +4,6 @@ ThisBuild / version := "0.1"
 
 lazy val hello = (project in file("."))
   .settings(
-    name := "hello"
+    name := "hello",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test,
   )
